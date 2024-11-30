@@ -29,6 +29,7 @@ public class CpB2BCartFacadeIntegrationTest extends ServicelayerTransactionalTes
 	{
 		final CutoffInfoData cutoffInfoData = cpCartFacade.getCutOffDateTime();
 		Assert.assertNotNull(cutoffInfoData);
+		Assert.assertNull(cutoffInfoData);
 	}
 
 }
